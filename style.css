@@ -225,9 +225,16 @@ body{
         color: #062830;
         margin-left: 5px;
         border-radius: 60%;
+        background-color: transparent;
         font-size: 18px;
         transition: 0.4 ease;
     }
+
+    .search-box button:hover{
+        color: #062830;
+        background: transparent;
+    }
+    
 
     .search-box input::placeholder{
         font-size: 15px;
