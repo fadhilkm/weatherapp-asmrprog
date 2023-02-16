@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -183,4 +184,28 @@ body{
         scale: 1;
         opacity: 1;
     }
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        margin-top: 25%;
+        align-items: start;
+ 
+    }
+    
+    .container{
+        width: 75%;
+        height: 105px;
+           
+    }
+
+    .search-box{
+        width: 100%;
+        height: min-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+
 }
