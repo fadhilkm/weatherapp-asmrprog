@@ -8,7 +8,7 @@ const input = document.querySelector('input');
 
 
 input.addEventListener('change', () =>{
-    console.log('tes');
+    
     clear.style.display = '';
 })
 
