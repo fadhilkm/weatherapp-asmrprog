@@ -27,6 +27,7 @@ search.addEventListener('click', () =>{
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`)
         .then(response => response.json())
         .then(json => {
+            
             if(json.cod === '404'){
                 container.style.height = '400px';
                 weatherBox.style.display = 'none';
@@ -65,6 +66,10 @@ search.addEventListener('click', () =>{
                     case 'Haze': 
                         image.src = 'images/mist.png';
                         break;
+
+                    case 'Thunderstorm': 
+                        image.src = 'images/rain.png';
+                        break;    
 
                     default:
                         image.src = '';
